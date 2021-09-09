@@ -7,7 +7,7 @@
 
 ### General Info:
 ***
-This Website page is the general portfolio page in which I have incuded navigation bar on the main page with some basic tags. On the main page of the website there is the logo and the profile picture with some mandatory information about the client. when we scroll the page there are section like 
+This Website page is the general portfolio page in which I have included navigation bar on the main page with some basic tags. On the main page of the website there is the logo and the profile picture with some mandatory information about the client. when we scroll the page there are section like 
 1. Landing page.
 2. About section.
 3. Skills.
