@@ -20,7 +20,7 @@ This Website page is the general portfolio page in which I have included navigat
 For making this website I used following Technologies(Languages)
 1. HTML5
 2. css3
-3. Jvascript
+3. JavaScript
 4. Bootstrap 5
 
 ### Use:
