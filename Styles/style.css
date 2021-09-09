@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;700;800&display=swap');
+:root{
+    --backround-color: #333647
+
+}
+*{
+    font-family: 'Baloo Bhai 2', cursive;
+
+}
+body{
+    background-color: var(--backround-color) !important;
+}
+/* Navbar======================================================================================================= */
+
+.nav_section .navbar-brand{
+    font-size: 30px;
+    margin-left: -14px;
+}
+.nav_section .navbar-brand span{
+    color: coral;
+}
+.nav_section .navbar-nav li{
+    margin-left: 92px;
+
+}
+.nav_section .navbar-nav li a{
+    color: rgb(255, 255, 255) !important;
+    font-size: 20px;
+}
+.nav_section .navbar-nav li button{
+    cursor: pointer;
+    margin-top: 6px;
+    width: 128px;
+    border: none;
+    border-radius: 10px;
+    font-size: 19px;
+    color: rgb(255, 255, 255);
+    background-color:rgb(245, 119, 16);
+}
+.nav_section .navbar-nav .nav-link::before{
+    content: '';
+    width: 0px;
+    height: 0px;
+    background-color: chartreuse;
+    position: absolute;
+    bottom: 7px;
+    transition: 0.5s;
+}
+.nav_section .navbar-nav .nav-link:hover::before{
+    content: '';
+    width: 30px;
+    height: 2px;
+    background-color: chartreuse;
+    position: absolute;
+    bottom: 7px;
+}
+.hero_section .row{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+.hero_section .row h1,h2,h3,p{
+    color: rgb(255, 255, 255);
+}
+.hero_section .row h1{
+    font-size: 65px;
+    font-weight: 500;
+    
+}
+.hero_section .row h2{
+    font-size: 30px;
+    font-weight: 100;
+    margin: 8px 0;
+
+}
+.hero_section .row p{
+    font-size: 20px;
+    margin-top: 13px;
+    color: burlywood;
+}
+.hero_section .row h1 span{
+    color: coral;
+}
+.hero_section .row button{
+    border: none;
+    border-radius: 10px;
+    font-size: 19px;
+    color: rgb(255, 255, 255);
+    background-color:rgb(245, 119, 16);
+    width: 113px;
+    margin-top: 10px;
+}
+.hero_section .row button:hover{
+    animation: swing;
+    animation-duration: 0.5s;
+    background-color: white;
+    color: black;
+}
+.hero_section .row img{
+    width: 45%;
+    border-radius: 40%;
+}
+
+@media(max-width:1200px) and(min-width:993px){
+    .hero_section .row h1{
+        font-size: 58px;
+    }
+    
+}
+@media(max-width:993px) and(min-width:763px){
+    .hero_section .row h1{
+        font-size: 42px;
+    }
+    .hero_section .row h2{
+        font-size: 30px;
+    }
+    .hero_section .row p{
+        font-size: 11px;
+    }
+    .hero_section .row h3{
+        font-size: 15px;
+    }
+    .hero_section .row button{
+        font-size: 15px;
+    }
+    
+}
+@media(max-width:763px) and(min-width:500px){
+    .hero_section{
+        margin: 135px 0px;
+    }
+    .hero_section .row h1{
+        font-size: 30px;
+        text-align: center;
+    }
+    .hero_section .row h2{
+        font-size: 20px;
+        text-align: center;
+    }
+    .hero_section .row p{
+        font-size: 11px;
+        text-align: center;
+    }
+    .hero_section .row h3{
+        font-size: 15px;
+        text-align: center;
+    }
+    .hero_section .btn_container{
+        font-size: 15px;
+        text-align: center;
+        justify-content: center;
+    }
+    
+}
+/* About section******************************************************************************************* */
+.about_us{
+    background-color: #282A39;
+    padding: 130px 0;
+}
+
+.about_us #heading{
+    font-weight: 600;
+    font-size: 40px;
+    letter-spacing: 0.5px;
+    margin-top: -20px;
+}
+.about_us .talk{
+    color: aliceblue;
+    font-size: 30px;
+    margin-top: 10px;
+}
+.about_us #info_gmail{
+    color: aliceblue;
+    font-size: 20px;
+    color: coral;
+    margin-top: 30px;
+}
+.about_us .contact_info{
+    color: antiquewhite;
+    margin-top: 20px;
+    word-spacing: 10px;
+}
+.about_us .about_me_right_section{
+    color: rgb(241, 224, 202);
+}
+.about_us .about_me_right_section hr{
+    color: rgb(245, 241, 239);
+    margin-top: 1px;
+    height: 2px;
+    border: 1px solid rgb(253 252 252);
+    width: 175px;
+}
+.about_us .table td{
+    color: rgb(235, 121, 77);
+    border: none;
+    font-size: 20px;
+}
+.about_us .about_me_right_section button{
+    border: none;
+    border-radius: 10px;
+    font-size: 19px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(245, 119, 16);
+    width: 121px;
+    margin-top: 10px
+}
+.about_us .about_me_right_section button:hover{
+    animation: swing;
+    animation-duration: 0.5s;
+}
+@media (max-width:993px) and (min-width: 768px){
+    .about_us #heading{
+        font-size: 28px;
+    }
+}
+
+/* Skills section**************************************************************************************************** */
+.skill_section{
+    padding: 150px 0;
+
+}
+.skill_section_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.skill_section #heading{
+    font-weight: 600;
+    font-size: 50px;
+}
+.skill_section hr{
+    border: 0.5px solid coral;
+    height: 2px;
+    width: 211px;
+}
+.skill_section p{
+    color: antiquewhite;
+    font-size: 20px;
+}
+.skill_section_left .social_media_icons .list-group-item {
+    margin-top: 5px;
+    width: 250px;
+    border-radius: 20px;
+    border-left: 2px solid coral;
+    background-color: #282A39;
+    font-size: 20px;
+}
+.skill_section_left .social_media_icons .list-group-item a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.skill_section_left .social_media_icons .list-group-item a:hover{
+    margin-left: 10px;
+    transition: 0.5s;
+
+}
+.skill_section_right .each_skills{
+    margin: 25px 0px;
+}
+.skill_section_right .each_skills span{
+    color: aliceblue;
+    font-size: 20px;
+}
+.skill_section_right .each_skills .progress{
+    background-color: #282A39;
+    color: coral;
+}
+.skill_section_right .each_skills .progress{
+    border-radius: 50px;
+    margin-top: 15px;
+    height: 15px;
+}
+.skill_section_right .each_skills .progress-bar{
+    background: coral;
+}
+/* portfolio section***************************************************************************************** */
+.portfolio_section{
+    background-color: #282A39;
+    padding: 150px 0;
+}
+.portfolio_section .nav-tabs .nav-link.active{
+    border: none;
+    color: coral;
+    border-bottom: 2px solid coral;
+    background: transparent;
+    font-size: 20px;
+}
+.portfolio_section .nav-tabs .nav-link.active:hover{
+    background-color: #33343b;
+}
+/* Contact section********************************************************************************************************************* */
+.contact_section{
+    background-color: #33343b;
+    padding-bottom: 150px;
+    padding-top: 110px;
+}
+.contact_section .heading{
+    font-weight: 600;
+    font-size: 50px;
+}
+.contact_section hr{
+    border: 0.5px solid rgb(252, 103, 49) ;
+    width: 50%;
+    margin: 12px 0;
+}
+.contact_section p{
+    font-size: 20px;
+}
+.contact_section .form-group .form-control{
+    background: #33343b;
+    border: none;
+    border-bottom: 2px solid coral;
+    border-radius: 0;
+}
+.contact_section .form-group .btn{
+    border: none;
+    border-radius: 10px;
+    font-size: 19px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(245, 119, 16);
+    width: 113px;
+    margin-top: 10px;
+}
+.contact_section .form-group .btn:hover{
+    animation: swing;
+    animation-duration: 0.5s;
+}
+.contact_section .right_section{
+    padding-top: 70px;
+
+}
+
+.contact_section ul li{
+    color: aliceblue;
+    font-size: 15px;
+    margin-bottom: 12px;
+    margin-left: 18px;
+}
+.contact_section .fa{
+    color: coral;
+}
+@media (max-width:993px) and (min-width: 768px){
+    .contact_section .heading{
+        font-weight: 500;
+        font-size: 30px;
+    }
+}
+/* Footer area******************************************************************************************************************* */
+.footer-area{
+    border-top: 2px solid coral;
+}
+.footer-area .navbar-brand{
+    font-size: 40px;
+}
+.footer-area .logo-area .fa{
+    color: coral;
+    font-size: 20px;
+    padding: 10px;
+}
+.footer-area .logo-area .fa:hover{
+    color: rgb(52, 241, 35);
+    transition: 0.5s;
+    animation: swing;
+    animation-duration: 0.5s;
+}
